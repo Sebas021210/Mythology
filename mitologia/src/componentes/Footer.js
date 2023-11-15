@@ -8,6 +8,7 @@ export default class Footer extends Component {
                 <div className="Logo">
                     <h1>MITOLOGIA</h1>
                 </div>
+                <br></br>
                 <div className="firstText">
                     <p>Sebastián Solorzano 21826</p>
                     <p>Pensamiento clásico y mitología</p>

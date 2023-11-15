@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import mitologia1 from "../imagenes/mitologia1.jpg";
-import mitologia2 from "../imagenes/mitologia2.jpg";
+import mitologia2 from "../imagenes/mitologia5.jpg";
 import mitologia4 from "../imagenes/mitologia4.jpg";
 import './Styles/Slide.scss'
 
