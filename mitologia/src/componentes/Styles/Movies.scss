@@ -1,8 +1,13 @@
-.container{
+.container {
     position: relative;
     right: 100px;
     width: 100%;
     height: 1200px;
+}
+
+.secondContainer {
+    height: 850px;
+    width: 85%;
 }
 
 .title {
@@ -31,17 +36,18 @@
     padding-bottom: 10px;
     display: grid;
     width: 92%;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    height: auto;
+    gap: 25px;
     padding-left: 10px;
     margin: 0 auto;
     align-items: center;
     transition: 1s;
     overflow: hidden;
     vertical-align: top;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
-.card-grande {
+.card-grande{
     position: relative;
     width: 250px;
     height: 360px;
@@ -53,8 +59,29 @@
     box-shadow: 0px 10px 10px #06070B;
 }
 
-.card-grande:hover {
+.card-grande:hover{
     transform: scale(1.01);
+}
+
+.card-grandeMitos{
+    position: relative;
+    width: 250px;
+    height: 360px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 23px;
+    transition: 0.5s;
+    background: #000000;
+    box-shadow: 0px 10px 10px #06070B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-grandeMitos:hover{
+    transform: scale(1.01);
+    border: 4px solid white;
 }
 
 .card-img-grande {
@@ -62,6 +89,12 @@
     width: 250px;
     min-height: 360px;
     bottom: 0px;
+}
+
+.card-grandeMitos h1, h3{
+    position: relative;
+    justify-content: center;
+    text-align: center;
 }
 
 .card-img-grande:hover {
@@ -74,18 +107,20 @@
         width: 100%;
         margin: 10px 0 20px;
     }
-    
+
     .card-container-grande {
         width: 92%;
         padding-left: 10px;
         left: 50px;
         margin: 0 auto;
     }
+
     .card-grande {
         margin-left: 10px;
         width: 150px;
         height: 260px;
     }
+
     .card-img-grande {
         width: 130px;
         min-height: 260px;

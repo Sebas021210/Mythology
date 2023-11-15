@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Icon from '@mdi/react';
-import { mdiCrownOutline } from '@mdi/js';
-import { mdiFencing } from '@mdi/js';
 import { mdiLightningBoltOutline } from '@mdi/js';
 import { mdiAlphabetGreek } from '@mdi/js';
 import './Styles/Header.scss'
@@ -29,16 +27,6 @@ export default class Header extends Component {
                         <a href='/dioses'>
                             <Icon path={mdiLightningBoltOutline} title="DIOSES" size={1} color="white" />
                             <span>DIOSES GRIEGOS</span>
-                        </a>
-
-                        <a href='/titanes'>
-                        <Icon path={mdiCrownOutline} title="TITANES" size={1} color="white" />
-                            <span>TITANES</span>
-                        </a>
-
-                        <a href='/heroes'>
-                            <Icon path={mdiFencing} title="HEROES" size={1} color="white" />
-                            <span>HEROES</span>
                         </a>
 
                         <a href='/mitos'>
