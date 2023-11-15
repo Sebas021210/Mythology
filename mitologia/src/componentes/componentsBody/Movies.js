@@ -112,7 +112,7 @@ export default class Movies extends Component {
         return (
             <div className="container">
                 <div className="movies">
-                    <h1 className="title">Star Wars: Películas y series</h1>
+                    <h1 className="title">Dioses Griegos</h1>
                     <div className="movies-list-grande">
                         <button className="prevBtn" onClick={() => this.handlePrevClick("SW")}><img src={prev} alt="" /></button>
                         <button className="nextBtn" onClick={() => this.handleNextClick("SW")}><img src={next} alt="" /></button>
@@ -127,7 +127,7 @@ export default class Movies extends Component {
                 </div>
 
                 <div className="movies">
-                    <h1 className="title">Novedades en Disney+</h1>
+                    <h1 className="title">Titanes</h1>
                     <div className="movies-list-peque">
                         <button className="prevBtn" onClick={() => this.handlePrevClick("N")}><img src={prev} alt="" /></button>
                         <button className="nextBtn" onClick={() => this.handleNextClick("N")}><img src={next} alt="" /></button>
@@ -142,7 +142,7 @@ export default class Movies extends Component {
                 </div>
 
                 <div className="movies">
-                    <h1 className="title">Íconos del pop</h1>
+                    <h1 className="title">Heroes</h1>
                     <div className="movies-list-grande">
                         <button className="prevBtn" onClick={() => this.handlePrevClick("IC")}><img src={prev} alt="" /></button>
                         <button className="nextBtn" onClick={() => this.handleNextClick("IC")}><img src={next} alt="" /></button>
@@ -157,7 +157,7 @@ export default class Movies extends Component {
                 </div>
 
                 <div className="movies">
-                    <h1 className="title">Recomendaciones para ti</h1>
+                    <h1 className="title">Mítos Griegos</h1>
                     <div className="movies-list-peque">
                         <button className="prevBtn" onClick={() => this.handlePrevClick("R")}><img src={prev} alt="" /></button>
                         <button className="nextBtn" onClick={() => this.handleNextClick("R")}><img src={next} alt="" /></button>

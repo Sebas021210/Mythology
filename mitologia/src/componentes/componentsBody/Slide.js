@@ -8,8 +8,6 @@ import img6 from '../../images/img6.jpg'
 import img7 from '../../images/img7.jpg'
 import img8 from '../../images/img8.jpg'
 import img9 from '../../images/img9.jpg'
-import prev from '../../images/prev.png'
-import next from '../../images/next.png'
 import '../Styles/Slide.scss'
 
 const movies = [
@@ -49,14 +47,11 @@ const movies = [
     name: 'Movie 8',
     image: img8
   },
-
 ];
 
 export default class Slide extends Component {
   componentDidMount() {
     const carousel = document.querySelector('.carousel');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
     let sliders = [];
     let slideIndex = 0;
     let intervalId = null;
@@ -94,29 +89,6 @@ export default class Slide extends Component {
       createSlide();
     }
 
-    nextButton.addEventListener("click", () => {
-      slideIndex++;
-      createSlide();
-      clearInterval(intervalId);
-      intervalId = setInterval(() => {
-        slideIndex++;
-        createSlide();
-      }, 5000);
-    });
-
-    prevButton.addEventListener("click", () => {
-      slideIndex--;
-      if (slideIndex < 0) {
-        slideIndex = movies.length - 1;
-      }
-      clearInterval(intervalId);
-      createSlide();
-      intervalId = setInterval(() => {
-        slideIndex++;
-        createSlide();
-      }, 5000);
-    });
-
     intervalId = setInterval(() => {
       slideIndex++;
       createSlide();
@@ -127,8 +99,6 @@ export default class Slide extends Component {
     return (
       <div className="SliderContainer">
         <div className="carousel"></div>
-        <button className="prev"><img src={prev} alt="" /></button>
-        <button className="next"><img src={next} alt="" /></button>
       </div>
     );
   }
