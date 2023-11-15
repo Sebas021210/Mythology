@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "./componentes/Header";
-import Body from "./componentes/Body";
+import Slide from "./componentes/Slide.js"
 import Footer from "./componentes/Footer";
 import "./App.scss";
 
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div id="App">
         <Header />
-        <Body />
+        <Slide />
         <Footer />
       </div>
     );

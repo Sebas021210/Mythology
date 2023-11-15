@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import mitologia1 from "../../imagenes/mitologia1.jpg";
-import mitologia3 from "../../imagenes/mitologia3.jpg";
-import mitologia4 from "../../imagenes/mitologia4.jpg";
-import '../Styles/Slide.scss'
+import mitologia1 from "../imagenes/mitologia1.jpg";
+import mitologia2 from "../imagenes/mitologia2.jpg";
+import mitologia4 from "../imagenes/mitologia4.jpg";
+import './Styles/Slide.scss'
 
 const images = [
   {
@@ -11,7 +11,7 @@ const images = [
   },
   {
     name: 'Image 2',
-    image: mitologia3
+    image: mitologia2
   },
   {
     name: 'Image 3',
