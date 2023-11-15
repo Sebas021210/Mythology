@@ -1,51 +1,21 @@
 import React, { Component } from "react";
-import img1 from '../../images/img1.jpg'
-import img2 from '../../images/img2.jpg'
-import img3 from '../../images/img3.jpg'
-import img4 from '../../images/img4.jpg'
-import img5 from '../../images/img5.jpg'
-import img6 from '../../images/img6.jpg'
-import img7 from '../../images/img7.jpg'
-import img8 from '../../images/img8.jpg'
-import img9 from '../../images/img9.jpg'
+import mitologia1 from "../../imagenes/mitologia1.jpg";
+import mitologia3 from "../../imagenes/mitologia3.jpg";
+import mitologia4 from "../../imagenes/mitologia4.jpg";
 import '../Styles/Slide.scss'
 
-const movies = [
+const images = [
   {
-    name: 'Movie 9',
-    image: img9
+    name: 'Image 1',
+    image: mitologia1
   },
   {
-    name: 'Movie 1',
-    image: img1
+    name: 'Image 2',
+    image: mitologia3
   },
   {
-    name: 'Movie 2',
-    image: img2
-  },
-  {
-    name: 'Movie 3',
-    image: img3
-  },
-  {
-    name: 'Movie 4',
-    image: img4
-  },
-  {
-    name: 'Movie 5',
-    image: img5
-  },
-  {
-    name: 'Movie 6',
-    image: img6
-  },
-  {
-    name: 'Movie 7',
-    image: img7
-  },
-  {
-    name: 'Movie 8',
-    image: img8
+    name: 'Image 3',
+    image: mitologia4
   },
 ];
 
@@ -57,7 +27,7 @@ export default class Slide extends Component {
     let intervalId = null;
 
     const createSlide = () => {
-      if (slideIndex >= movies.length) {
+      if (slideIndex >= images.length) {
         slideIndex = 0;
       }
 
@@ -66,12 +36,12 @@ export default class Slide extends Component {
       let content = document.createElement('div');
       let h1 = document.createElement('h1');
 
-      h1.appendChild(document.createTextNode(movies[slideIndex].name));
+      h1.appendChild(document.createTextNode(images[slideIndex].name));
       content.appendChild(h1);
       slide.appendChild(imgElement);
       slide.appendChild(content);
       carousel.appendChild(slide);
-      imgElement.src = movies[slideIndex].image;
+      imgElement.src = images[slideIndex].image;
 
       slide.className = 'slider';
       content.className = 'slide-content';
