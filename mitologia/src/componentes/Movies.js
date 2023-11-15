@@ -3,7 +3,14 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './Styles/Movies.scss'
 
-import img1SW from '../images/starwars/img1SW.jpg'
+import discordia from '../imagenes/mitos/discordia.jpg'
+import guerra from '../imagenes/mitos/guerra.jpeg'
+import caballo from '../imagenes/mitos/caballo.jpg'
+import odiseo from '../imagenes/mitos/odiseo.png'
+import ulises from '../imagenes/mitos/ulises.jpg'
+import cronos from '../imagenes/mitos/cronos.jpg'
+import afrodita from '../imagenes/mitos/afrodita.jpg'
+import rapto from '../imagenes/mitos/rapto.jpg'
 
 import zeus from '../imagenes/dioses/zeus.png'
 import poseidon from '../imagenes/dioses/poseidon.png'
@@ -66,7 +73,7 @@ export default class Movies extends Component {
                 img: hades
             },
             {
-                nombre: "Aphrodite",
+                nombre: "Afrodita",
                 info: "Afrodita nació de entre las olas del mar y cautivó con su belleza a quienes lo presenciaron. Los historiadores explican que se casó con Hefesto, con quien realmente no deseaba estar, por lo que era amante de Ares.",
                 secondInfo: "",
                 img: aphrodite
@@ -126,49 +133,49 @@ export default class Movies extends Component {
                 nombre: "La manzana de la discordia",
                 info: "Cuando Peleo, padre de Aquiles, iba a casarse con la diosa del mar, Tetis, Zeus no invitó a Eris, la diosa de la discordia. Al enterarse, la diosa se presentó en la ceremonia, se acercó a las diosas Afrodita, Atenea y Hera y dejó sobre su mesa una manzana que llevaba inscrita la frase “Para la más hermosa”. Las tres comenzaron a disputarse el presente y nombraron a Zeus juez del asunto. Zeus no aceptó y, en su lugar, encargó a Hermes buscar a Paris, príncipe de Troya y pastor, para que tomara la decisión.",
                 secondInfo: "Las diosas comenzaron a desfilar ante Paris y a hacerle promesas. Hera le prometió poder y riquezas, y Atenea, sabiduría y triunfo en las guerras. Pero Afrodita le prometió el amor de la mujer que eligiera, con lo que obtuvo la manzana. Paris le pidió el amor de Helena, hija del rey Menelao de Esparta, a quien raptó, desatando la guerra de Troya.",
-                img: img1SW
+                img: discordia
             },
             {
                 nombre: "Guerra de troya",
                 info: "La Guerra de Troya se desencadenó debido al rapto de Helena, la esposa de Menelao, por Paris, príncipe troyano. Este acto provocó la ira de los griegos, liderados por Agamenón y Aquiles.",
                 secondInfo: "Después de un largo asedio de diez años, los griegos idearon el famoso caballo de madera como estratagema para infiltrarse en Troya. La ciudad fue saqueada y destruida, poniendo fin a la guerra.",
-                img: img1SW
+                img: guerra
             },
             {
                 nombre: "El caballo de troya",
                 info: "Los griegos construyeron un caballo gigante de madera y se escondieron dentro, mientras el ejército fingía irse. Troya pensaba que el caballo era un regalo de la diosa Atenea pero al llegar la noche los soldados griegos salieron del caballo, abrieron las puertas de la ciudad y saquearon Troya.",
                 secondInfo: "Los griegos se llevaron a Helena, mataron al rey de Troya y quemaron completamente la ciudad de Troya, terminando así la guerra.",
-                img: img1SW
+                img: caballo
             },
             {
                 nombre: "La aventura de odiseo",
                 info: "El viaje de Odiseo en su regreso a Ítaca después de la Guerra de Troya. Odiseo enfrenta numerosos desafíos y obstáculos, incluyendo encuentros con criaturas mitológicas como los cíclopes, las sirenas y la hechicera Circe. Su astucia y valentía lo ayudan a superar estas pruebas.",
                 secondInfo: "Mientras tanto, en Ítaca, su esposa Penélope lucha contra pretendientes que buscan casarse con ella, creyendo que Odiseo ha muerto. Después de un viaje lleno de aventuras que dura diez años, Odiseo finalmente regresa a Ítaca, donde, con la ayuda de su hijo Telémaco, planea y ejecuta la venganza contra los pretendientes.",
-                img: img1SW
+                img: odiseo
             },
             {
                 nombre: "Ulises y las sirenas",
                 info: "Ulises ordenó a sus marinos tapar sus oídos con cera. Pero como también sentía una enorme curiosidad por escuchar aquel canto, prefirió atarse a sí mismo a un mástil y pedir a la tripulación que ignorase cualquier súplica para desatarlo.",
                 secondInfo: "Una vez en alta mar, las sirenas comenzaron su canto. Ulises se desesperó, pero sus marinos obedecieron la orden y todos se salvaron. Las sirenas, despechadas, se arrojaron al mar. El cuerpo de la sirena Parténope fue llevado hasta una orilla, donde levantaron un monumento en su honor.",
-                img: img1SW
+                img: ulises
             },
             {
                 nombre: "Crono y el nacimiento de los dioses olímpicos",
                 info: "Después de castrar a Urano (el Cielo), Crono (Saturno) no demoró en convertirse en un déspota como Urano. Tomó por esposa a su hermana, Rea y procrearon a la primera generación de dioses: Hera, Deméter, Hestia, Poseidón y Hades. Resintiendo un levantamiento de sus hijos en su contra, Crono los devoraba tan pronto nacían.",
                 secondInfo: "Cuando Rea engendró a Zeus, lo alumbró en secreto y lo entregó a los cuidados de Gea. Al crecer, Zeus se hizo emplear como copero de Cronos. Un día, le preparó al titán del tiempo un brebaje, tras el cual vomitó a todos los dioses. Los hermanos se unieron en contra de los titanes bajo el liderazgo de Zeus, a quienes vencieron y desterraron al Tártaro.",
-                img: img1SW
+                img: cronos
             },
             {
                 nombre: "Nacimiento de afrodita",
                 info: "Crono castró a su padre, Urano, con una hoz que le había hecho Gea. Los órganos reproductivos de Urano cayeron al mar. Al contacto y roce con estos, el mar formó espuma y se engendró a Afrodita, diosa del Amor y la sensualidad, quien emergió en un cuerpo de mujer adulta, poseedora de una belleza sin par.",
                 secondInfo: "Con el soplo del Viento (los Céfiros), Afrodita fue llevada sobre una concha marina hasta dos paradas: la primera, Citera, y la segunda, la orilla de Chipre. Una vez en Chipre, Afrodita fue recibida por las Estaciones (llamadas las Horas), quienes la condujeron a la llamada estancia de los Inmortales.",
-                img: img1SW
+                img: afrodita
             },
             {
                 nombre: "El rapto de Perséfone",
                 info: "Perséfone era la hija única de Deméter (diosa de la agricultura), quien la había procreado con Zeus. Al crecer, su tío Hades, dios del inframundo, se empeñó en poseerla, así que la raptó un día en que Perséfone recogía un narciso.",
                 secondInfo: "Deméter escuchó su grito desde el inframundo, y la buscó incansablemente. Renunció a su divinidad hasta que Hades la devolviera. Como la presencia de Deméter entre los mortales hacía estéril la tierra, Zeus exigió la devolución de Perséfone. Hades accedió a condición de que Perséfone se mantuviera en ayunas hasta salir del inframundo.",
-                img: img1SW
+                img: rapto
             }
         ]
 
@@ -226,12 +233,13 @@ export default class Movies extends Component {
                                 <Modal.Body>
                                     {this.state.selectedMito && (
                                         <div>
-                                            <img src={this.state.selectedMito.img} alt={this.state.selectedMito.nombre} style={{ maxWidth: "100%" }} />
-                                            <br />
                                             {this.state.selectedMito.info}
                                             <br />
                                             <br />
                                             {this.state.selectedMito.secondInfo}
+                                            <br />
+                                            <br />
+                                            <img src={this.state.selectedMito.img} alt={this.state.selectedMito.nombre} style={{ minWidth: "100%", minHeight: "220px" }} />
                                         </div>
                                     )}
                                 </Modal.Body>
